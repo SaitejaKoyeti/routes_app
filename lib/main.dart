@@ -41,25 +41,36 @@ class _MyCustomFormState extends State<MyCustomForm>{
            Padding(padding: EdgeInsets.all(15),
              child: TextFormField(
                decoration: InputDecoration(
-                 hintText: "Enter Email",
+                 labelText: "Enter Email",
                  prefixIcon: Icon(Icons.email),
                  border: OutlineInputBorder(),
                ),
-
+              validator: (value) {
+                 if(value== null || value.isEmpty) {
+                   return "Please enter your email";
+                 }
+                return null;
+              },
              ),
            ),
            Padding(padding: EdgeInsets.all(15),
              child: TextFormField(
                decoration: InputDecoration(
-                 hintText: "Enter Password",
+                 labelText: "Enter Password",
                  prefixIcon: Icon(Icons.password),
                  border: OutlineInputBorder(),
                ),
+               validator: (value) {
+                 if(value== null || value.isEmpty) {
+                   return "Please enter your Password";
+                 }
+                 return null;
+               },
              ),
            ),
            Center(
                child: ElevatedButton(
-                 child: Text("click"),
+                 child: Text("SignIn"),
                  onPressed: () {
                    Navigator.push(context,
                        MaterialPageRoute(builder: (context)=> SecondApp()));
