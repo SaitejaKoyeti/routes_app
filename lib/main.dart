@@ -13,11 +13,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("First Screen"),
+        title: Text("SignIn page"),
       ),
       body: Column(
         children: [
-          Text("LogIn",textAlign: TextAlign.center, style: TextStyle(
+          Text("Sigin",textAlign: TextAlign.center, style: TextStyle(
               fontSize: 25, color: Colors.blue, fontWeight: FontWeight.bold)),
           Padding(padding: EdgeInsets.all(15),
             child: TextFormField(

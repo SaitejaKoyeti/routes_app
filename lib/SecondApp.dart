@@ -7,7 +7,7 @@ class SecondApp extends StatelessWidget{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Second Screen"),
+        title: Text("Signup page"),
       ),
       body: Column(
         children: [
