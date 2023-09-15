@@ -10,7 +10,7 @@ class SecondApp extends StatelessWidget{
         title: Text("Signup page"),
       ),
       body: Column(
-        children: [
+        children: [Padding(padding: EdgeInsets.only(top: 10)),
           Text("Signup",textAlign: TextAlign.center, style: TextStyle(
               fontSize: 25, color: Colors.blue, fontWeight: FontWeight.bold)),
           Padding(padding: EdgeInsets.all(15),
